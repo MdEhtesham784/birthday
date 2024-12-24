@@ -1,0 +1,123 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background: #f9f3e9;
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  background: linear-gradient(to right, #ffd1dc, #fbc2eb);
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin: 0 0 10px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+}
+
+.hero-image {
+  border-radius: 50%;
+}
+
+.hero-image img {
+  max-width: 300px;
+  border-radius: 48%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Slideshow Section */
+.slideshow {
+  text-align: center;
+  padding: 50px 20px;
+  background: #fff7f0;
+}
+
+.slideshow h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Slideshow Container */
+.slideshow-container {
+  position: relative;
+  max-width: 410px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Slides */
+.slide {
+  display: none;
+  transition: transform 1s ease-out;
+}
+
+.slide img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Fade Animation */
+@keyframes fade {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
+
+.fade {
+  animation: fade 1s ease-out forwards;
+}
+
+/* Message Section */
+.message {
+  text-align: center;
+  padding: 40px;
+  background: #ffe4e1;
+}
+
+.message h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.message p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+/* Music Player */
+.music-player {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ff85a2;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+.music-player button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.music-player button:hover {
+  text-decoration: underline;
+}
